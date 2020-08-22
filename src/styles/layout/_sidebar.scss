@@ -1,0 +1,62 @@
+.sidebar {
+	flex-basis: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 2rem;
+
+	img {
+		width: 170px;
+		border-radius: 50%;
+		border: 3px solid #fff;
+	}
+
+	&__content {
+		text-align: center;
+		margin: 2rem 0;
+
+		h1 {
+			margin: 0;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		i {
+			color: #fff;
+			padding: 1.2rem;
+		}
+
+		i:hover {
+			color: $color-dark;
+		}
+	}
+
+	&__nav {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			padding: 0.6rem 1.2rem;
+			border-bottom: solid 3px transparent;
+		}
+
+		a:hover {
+			background-color: $color-primary;
+			color: $color-dark;
+		}
+
+		.is-active {
+			border-bottom: solid 3px $color-dark;
+			color: $color-dark;
+			//background-color: $color-mid;
+			font-weight: bold;
+		}
+	}
+}

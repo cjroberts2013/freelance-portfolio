@@ -1,10 +1,9 @@
 .sidebar {
 	flex-basis: 450px;
+	color: #fff;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: #fff;
+	justify-content: space-between;
 	font-size: 2rem;
 
 	img {
@@ -14,6 +13,13 @@
 	}
 
 	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__text {
 		text-align: center;
 		margin: 2rem 0;
 
@@ -59,4 +65,41 @@
 			font-weight: bold;
 		}
 	}
+
+	.close-nav {
+		background: none;
+		border: none;
+		font-size: 3rem;
+		margin-top: 1.5rem;
+		margin-right: 1.5rem;
+		align-self: flex-end;
+		visibility: hidden;
+	}
+
+	.copyright {
+		text-align: center;
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 1000px) {
+	.sidebar {
+		width: 80%;
+		height: 100%;
+		border-radius: 0px;
+		background: linear-gradient($color-light, $color-secondary);
+		position: fixed;
+		top: 0;
+		right: 0;
+		transition: all 0.3s linear;
+		transform: translate(100%);
+
+		.close-nav {
+			visibility: visible;
+		}
+	}
+}
+
+.show-sidebar {
+	transform: translate(0%);
 }

@@ -39,22 +39,47 @@ class Sidebar extends Component {
 						</div>
 					</div>
 					<div className="sidebar__nav">
-						<NavLink to="/" activeClassName="is-active" exact>
+						<NavLink
+							to="/"
+							activeClassName="is-active"
+							exact
+							onClick={this.props.removeSidebar}
+						>
 							Home
 						</NavLink>
-						<NavLink to="/about" activeClassName="is-active">
+						<NavLink
+							to="/about"
+							activeClassName="is-active"
+							onClick={this.props.removeSidebar}
+						>
 							About Me
 						</NavLink>
-						<NavLink to="/portfolio" activeClassName="is-active">
+						<NavLink
+							to="/portfolio"
+							activeClassName="is-active"
+							onClick={this.props.removeSidebar}
+						>
 							Portfolio
 						</NavLink>
-						<NavLink to="/resume" activeClassName="is-active">
+						<NavLink
+							to="/resume"
+							activeClassName="is-active"
+							onClick={this.props.removeSidebar}
+						>
 							Resume
 						</NavLink>
-						<NavLink to="/blog" activeClassName="is-active">
+						<NavLink
+							to="/blog"
+							activeClassName="is-active"
+							onClick={this.props.removeSidebar}
+						>
 							Blog
 						</NavLink>
-						<NavLink to="/contact" activeClassName="is-active">
+						<NavLink
+							to="/contact"
+							activeClassName="is-active"
+							onClick={this.props.removeSidebar}
+						>
 							Contact
 						</NavLink>
 					</div>

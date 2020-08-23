@@ -47,13 +47,7 @@ class Sidebar extends Component {
 						>
 							Home
 						</NavLink>
-						<NavLink
-							to="/about"
-							activeClassName="is-active"
-							onClick={this.props.removeSidebar}
-						>
-							About Me
-						</NavLink>
+
 						<NavLink
 							to="/portfolio"
 							activeClassName="is-active"
@@ -61,13 +55,7 @@ class Sidebar extends Component {
 						>
 							Portfolio
 						</NavLink>
-						<NavLink
-							to="/resume"
-							activeClassName="is-active"
-							onClick={this.props.removeSidebar}
-						>
-							Resume
-						</NavLink>
+
 						<NavLink
 							to="/blog"
 							activeClassName="is-active"

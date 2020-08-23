@@ -6,7 +6,6 @@ import PortfolioPage from "./components/PortfolioPage";
 import ResumePage from "./components/ResumePage";
 import BlogPage from "./components/BlogPage";
 import ContactPage from "./components/ContactPage";
-import AboutPage from "./components/AboutPage";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
@@ -40,9 +39,7 @@ class App extends Component {
 						/>
 						<Switch>
 							<Route path="/" exact component={HomePage} />
-							<Route path="/about" component={AboutPage} />
 							<Route path="/portfolio" component={PortfolioPage} />
-							<Route path="/resume" component={ResumePage} />
 							<Route path="/blog" exact component={BlogPage} />
 							<Route path="/contact" component={ContactPage} />
 						</Switch>

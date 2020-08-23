@@ -1,0 +1,39 @@
+.hero {
+	line-height: 1;
+	font-size: 2rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	padding: 2rem;
+	box-sizing: border-box;
+
+	h1 {
+		font-size: 5rem;
+	}
+
+	p {
+		margin: 1rem;
+	}
+	img {
+		width: 40px;
+		animation-name: hop;
+		animation-duration: 0.7s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+
+	@keyframes hop {
+		from {
+			transform: translatey(0);
+		}
+
+		to {
+			transform: translatey(10px);
+		}
+	}
+	.scroll__icon {
+		text-align: center;
+	}
+}

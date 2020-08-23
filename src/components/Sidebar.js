@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom";
 class Sidebar extends Component {
 	render() {
 		return (
-			<div className="sidebar">
-				<button className="close-nav">
+			<div className={`sidebar ${this.props.showSidebar}`}>
+				<button className="close-nav" onClick={this.props.removeSidebar}>
 					<i className="fas fa-times"></i>
 				</button>
 				<div className="sidebar__content">
@@ -15,16 +15,25 @@ class Sidebar extends Component {
 						<h1>Charles Roberts</h1>
 						<p>Web Developer</p>
 						<div className="sidebar__text--logos">
-							<a href="https://twitter.com/cjrobertstech" target="_blank">
+							<a
+								href="https://twitter.com/cjrobertstech"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<i name="atag" className=" fab fa-twitter"></i>
 							</a>
 							<a
 								href="https://www.linkedin.com/in/cjrobertstech/"
 								target="_blank"
+								rel="noopener noreferrer"
 							>
 								<i name="atag" className=" fab fa-linkedin-in"></i>
 							</a>
-							<a href="https://github.com/cjroberts2013" target="_blank">
+							<a
+								href="https://github.com/cjroberts2013"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<i name="atag" className="fab fa-github"></i>
 							</a>
 						</div>

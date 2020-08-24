@@ -16,6 +16,25 @@
 	p {
 		margin: 1rem;
 	}
+
+	a {
+		display: inline-block;
+		text-decoration: none;
+		color: #fff;
+		border: none;
+		background: linear-gradient($color-light, $color-secondary);
+		padding: 0.8rem 1.4rem;
+		margin: 1rem;
+		border-radius: 5px;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+
+		&:hover {
+			color: $color-dark;
+			font-weight: bold;
+			transform: scale(1.08);
+		}
+	}
+
 	img {
 		width: 40px;
 		animation-name: hop;
@@ -35,5 +54,56 @@
 	}
 	.scroll__icon {
 		text-align: center;
+	}
+}
+
+.about {
+	font-size: 1.6rem;
+
+	a {
+		color: $color-text;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	&__content {
+		// display: grid;
+		// grid-template-columns: 1fr 1fr;
+		// gap: 2rem;
+		display: flex;
+		justify-content: space-between;
+
+		&--text {
+			width: 50%;
+		}
+
+		&--list {
+			width: 45%;
+		}
+	}
+}
+
+@media (max-width: 765px) {
+	.about {
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		&__content {
+			flex-direction: column;
+
+			&--text {
+				width: 100%;
+				margin-bottom: 3rem;
+			}
+
+			&--list {
+				width: 100%;
+				//font-size: 1.6rem;
+			}
+		}
 	}
 }

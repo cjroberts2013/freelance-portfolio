@@ -3,7 +3,6 @@ import "./styles/main.scss";
 import Sidebar from "./components/Sidebar";
 import HomePage from "./components/HomePage";
 import PortfolioPage from "./components/PortfolioPage";
-import ResumePage from "./components/ResumePage";
 import BlogPage from "./components/BlogPage";
 import ContactPage from "./components/ContactPage";
 import { BrowserRouter, Route, Switch } from "react-router-dom";

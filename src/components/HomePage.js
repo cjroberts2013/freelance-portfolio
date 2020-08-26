@@ -80,6 +80,31 @@ export class HomePage extends Component {
 								</li>
 							</ul>
 						</div>
+						<div className="coding__skills">
+							<h2>
+								Coding <span>Skills</span>
+							</h2>
+							<div className="skills__icons">
+								<span>
+									<ion-icon name="logo-html5"></ion-icon>
+								</span>
+								<span>
+									<ion-icon name="logo-css3"></ion-icon>
+								</span>
+								<span>
+									<ion-icon name="logo-sass"></ion-icon>
+								</span>
+								<span>
+									<ion-icon name="logo-javascript"></ion-icon>
+								</span>
+								<span>
+									<ion-icon name="logo-react"></ion-icon>
+								</span>
+								<span>
+									<ion-icon name="logo-github"></ion-icon>
+								</span>
+							</div>
+						</div>
 					</section>
 				</div>
 			</div>

@@ -54,6 +54,7 @@
 	}
 	.scroll__icon {
 		text-align: center;
+		z-index: 1;
 	}
 }
 
@@ -74,6 +75,7 @@
 		// gap: 2rem;
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 3rem;
 
 		&--text {
 			width: 50%;
@@ -84,6 +86,31 @@
 		}
 	}
 }
+
+.skills__icons {
+	//display: flex;
+	//flex-wrap: wrap;
+	//justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	font-size: 7rem;
+	gap: auto;
+	margin-bottom: 3rem;
+
+	span {
+		display: grid;
+		justify-content: center;
+		padding-top: 3rem;
+	}
+}
+
+// @media (max-width: 1200px) {
+// 	.skills__icons {
+// 		ion-icon {
+// 			padding: 0;
+// 		}
+// 	}
+// }
 
 @media (max-width: 765px) {
 	.about {
@@ -105,5 +132,10 @@
 				//font-size: 1.6rem;
 			}
 		}
+	}
+
+	.skills__icons {
+		grid-template-columns: 1fr 1fr 1fr;
+		font-size: 5rem;
 	}
 }

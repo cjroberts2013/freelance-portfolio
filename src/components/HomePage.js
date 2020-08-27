@@ -43,7 +43,7 @@ export class HomePage extends Component {
 									<span>Location</span> Detroit, MI
 								</li>
 								<li>
-									<span>Email</span> cjroberts2013@gmail.com
+									<span>Email</span> charles@charlesroberts.design
 								</li>
 								<li>
 									<span>Phone</span> 979 618 0950

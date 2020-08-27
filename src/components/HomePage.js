@@ -13,8 +13,8 @@ export class HomePage extends Component {
 					<div className="hero__content">
 						<h1>Charles Roberts</h1>
 						<p>Web Developer</p>
-						<NavLink to="/contact" className="cta">
-							Hire Me!
+						<NavLink to="/portfolio" className="cta">
+							Check Out My Work!
 						</NavLink>
 					</div>
 					<div className="scroll__icon">
@@ -80,6 +80,8 @@ export class HomePage extends Component {
 								</li>
 							</ul>
 						</div>
+					</section>
+					<section className="skills">
 						<div className="coding__skills">
 							<h2>
 								Coding <span>Skills</span>
@@ -105,6 +107,65 @@ export class HomePage extends Component {
 								</span>
 							</div>
 						</div>
+					</section>
+					<section className="services">
+						<h2>
+							What <span>I Do</span>
+						</h2>
+						<div className="service__cards">
+							<div className="card">
+								<span>
+									<ion-icon name="desktop-outline"></ion-icon>
+								</span>
+								<h3>Responsive Web Design</h3>
+								<p>
+									No matter how small, any business will benefit from a web
+									presence in this day and age. Let me help bring your vision to
+									life with a fast loading, beautiful site, custom built to your
+									specific needs.
+								</p>
+							</div>
+							<div className="card">
+								<span>
+									<ion-icon name="cloud-upload-outline"></ion-icon>
+								</span>
+								<h3>Web Hosting</h3>
+								<p>
+									Hosting is tricky and a hassle to deal with. As your hosting
+									manager, I'll take care the necessary updates and support
+									needed to keep your site running smoothly.
+								</p>
+							</div>
+							<div className="card">
+								<span>
+									<ion-icon name="newspaper-outline"></ion-icon>
+								</span>
+								<h3>Online Marketing</h3>
+								<p>
+									Want to tell your story? I help businesses grow by
+									communicating brand stories using online media, print and
+									social media.
+								</p>
+							</div>
+							<div className="card">
+								<span>
+									<ion-icon name="search-circle-outline"></ion-icon>
+								</span>
+								<h3>SEO & AdWords</h3>
+								<p>
+									I optimize websites for search engines, monitor conversions
+									and manage inbound marketing. Every website will include
+									keyword rich title tags, keyword rich URLs, keyword rich image
+									alt tags and compelling meta descriptions.
+								</p>
+							</div>
+						</div>
+					</section>
+					<section className="reviews">
+						<h2>
+							Clients <span>& Reviews</span>
+						</h2>
+						<div className="review__card"></div>
 					</section>
 				</div>
 			</div>

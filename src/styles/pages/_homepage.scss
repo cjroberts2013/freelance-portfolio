@@ -58,9 +58,12 @@
 	}
 }
 
-.about {
+section {
 	font-size: 1.6rem;
+	margin-bottom: 20rem;
+}
 
+.about {
 	a {
 		color: $color-text;
 	}
@@ -104,15 +107,37 @@
 	}
 }
 
-// @media (max-width: 1200px) {
-// 	.skills__icons {
-// 		ion-icon {
-// 			padding: 0;
-// 		}
-// 	}
-// }
+.services {
+	h2 {
+		margin-bottom: 3rem;
+	}
+
+	.service__cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		span {
+			display: block;
+			text-align: center;
+			font-size: 5rem;
+		}
+		.card {
+			min-width: 220px;
+			max-width: 350px;
+			padding: 1rem 3rem;
+		}
+	}
+}
+
+.reviews {
+}
 
 @media (max-width: 765px) {
+	section {
+		margin-bottom: 8rem;
+	}
+
 	.about {
 		ul {
 			margin: 0;
@@ -137,5 +162,13 @@
 	.skills__icons {
 		grid-template-columns: 1fr 1fr 1fr;
 		font-size: 5rem;
+	}
+
+	.services {
+		.service__cards {
+			span {
+				font-size: 4rem;
+			}
+		}
 	}
 }

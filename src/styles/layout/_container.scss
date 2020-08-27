@@ -28,6 +28,7 @@
 
 .menu {
 	visibility: hidden;
+	z-index: 2;
 }
 
 @media (max-width: 1300px) {

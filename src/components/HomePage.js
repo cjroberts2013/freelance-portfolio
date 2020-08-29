@@ -165,7 +165,9 @@ export class HomePage extends Component {
 						<h2>
 							Clients <span>& Reviews</span>
 						</h2>
-						<div className="review__card"></div>
+						<div className="review__card">
+							Custom reviews from brody daryl and annette.
+						</div>
 					</section>
 				</div>
 			</div>

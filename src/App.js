@@ -5,6 +5,9 @@ import HomePage from "./components/HomePage";
 import PortfolioPage from "./components/PortfolioPage";
 import BlogPage from "./components/BlogPage";
 import ContactPage from "./components/ContactPage";
+import BlogPost1 from "./components/BlogPost1";
+import BlogPost2 from "./components/BlogPost2";
+import BlogPost3 from "./components/BlogPost3";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
@@ -40,6 +43,9 @@ class App extends Component {
 							<Route path="/" exact component={HomePage} />
 							<Route path="/portfolio" component={PortfolioPage} />
 							<Route path="/blog" exact component={BlogPage} />
+							<Route path="/blog/1" exact component={BlogPost1} />
+							<Route path="/blog/2" exact component={BlogPost2} />
+							<Route path="/blog/3" exact component={BlogPost3} />
 							<Route path="/contact" component={ContactPage} />
 						</Switch>
 					</div>

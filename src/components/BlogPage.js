@@ -3,10 +3,12 @@ import React, { Component } from "react";
 export class BlogPage extends Component {
 	render() {
 		return (
-			<div className="content">
+			<section className="content blog">
 				<h1>Blog Post</h1>
-				<div className="blogs"></div>
-			</div>
+				<div className="blogs">
+					<div className="card"></div>
+				</div>
+			</section>
 		);
 	}
 }
